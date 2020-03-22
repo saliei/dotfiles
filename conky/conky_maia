@@ -45,10 +45,10 @@ ${voffset 10}${goto 40}${color}Swap${font}$alignr${swap}/ ${swapfree}
 #
 ${voffset 30}${goto 40}${color}${font}DiskIO${voffset -15}$alignr${diskiograph /dev/sda 25,120 555555 AAAAAA -l -t}
 #
-${voffset 30}${goto 40}${color}${font}NetDn${voffset -20}$alignr${downspeedgraph wlp9s0 25,120 555555 AAAAAA -l -t}
-${voffset 2}$alignr${downspeed wlp9s0}/ ${totaldown wlp9s0}
-${voffset 25}${goto 40}${color}${font}NetUP${voffset -20}$alignr${upspeedgraph wlp9s0 25,120 555555 AAAAAA -l -t}
-${voffset 2}$alignr${upspeed wlp9s0}/ ${totalup wlp9s0}
+${voffset 30}${goto 40}${color}${font}NetDn${voffset -20}$alignr${downspeedgraph wlp1s0 25,120 555555 AAAAAA -l -t}
+${voffset 2}$alignr${downspeed wlp1s0}/ ${totaldown wlp1s0}
+${voffset 25}${goto 40}${color}${font}NetUP${voffset -20}$alignr${upspeedgraph wlp1s0 25,120 555555 AAAAAA -l -t}
+${voffset 2}$alignr${upspeed wlp1s0}/ ${totalup wlp1s0}
 #
 #${voffset 140}$font$alignr${execi 10000 awk -F= '/TION/ {print $2}' /etc/lsb-release |sed 's/"//g'} \
 #${execi 10000 awk -F= '/EASE=/ {printf $2" "} /NAME/ {print $2}' /etc/lsb-release}
